@@ -1,21 +1,9 @@
-<!-- <div class="container-fluid no-pd sidebarBG">
-  <div class="col-md-1 no-pd">
-    <p [routerLink]="['/home/dashboard']">Dashboard</p>
-    <p [routerLink]="['/home/tasks']">Dashboard 2</p>
-  </div>
-  <div class="col-md-11 no-pd DashboardBG">
-    <router-outlet></router-outlet>
-  </div>
-</div> -->
-
-<!-- <div (click)="showMenu = !showMenu" class="menu-toggler sidebar-toggler">
-  <span>ddddd</span>
-</div> -->
 <div *ngIf="showMenu">
   <div class="container-fluid no-pd sidebarBG">
     <div class="col-md-1 no-pd navbar">
       <p>
-        <i class="fa fa-exchange" (click)="showMenu = !showMenu" aria-hidden="true"></i>
+        <!-- <i class="fa fa-exchange" (click)="showMenu = !showMenu" aria-hidden="true"></i> -->
+        <i class="fa fa-exchange" (click)="showMenu = showMenu" aria-hidden="true"></i>
       </p>
       <p>
         <a [routerLink]="['/home/dashboard']">

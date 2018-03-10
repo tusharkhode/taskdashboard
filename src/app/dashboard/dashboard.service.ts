@@ -8,7 +8,7 @@ export class DashboardService {
 
   constructor(private _http: Http) { }
 
-  getAllTask(){
+  getAllTask() {
     return this._http.get('../assets/data.json').map(
       (response) => response.json()
     )

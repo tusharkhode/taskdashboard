@@ -38,7 +38,7 @@ export class DashboardComponent implements OnInit {
     this.addTaskForm = this._fb.group({
       userName: ['', [Validators.required]],
       taskName: ['', [Validators.required]],
-      bucket: ['', [Validators.required]]
+      bucket: ['', [Validators.required, Validators.pattern(/^(?:4(?:\.0)?|[1-3](?:\.[0-9])?|0?(\.[0-9]))$/)]]
     });
   }
 
