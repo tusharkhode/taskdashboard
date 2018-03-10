@@ -1,0 +1,124 @@
+<div class="panel panel-default">
+  <div class="col-md-12 panel-body navigation">
+    <p>Dashboard</p>
+    <p>Home / Dashboard</p>
+  </div>
+</div>
+<div class="dashboard no-pd">
+  <div class="panel panel-default">
+    <div class="col-md-12 col-xs-12 analytics no-pd">
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="col-xs-12 col-md-12">
+          <div class="col-md-3 col-xs-4 no-pd">
+            <i class="fa fa-users fa-5x" aria-hidden="true"></i>
+          </div>
+          <div class="col-md-9 col-xs-8 tasks_data">
+            <p>{{ allTasks.length }}</p>
+            <p>Total Tasks</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="col-xs-12 col-md-12">
+          <div class="col-md-3 col-xs-4 no-pd">
+            <i class="fa fa-tasks" aria-hidden="true"></i>
+          </div>
+          <div class="col-md-9 col-xs-8 tasks_data">
+            <p>{{ todaysTask.length }}</p>
+            <p>Tasks Today</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="col-xs-12 col-md-12">
+          <div class="col-md-3 col-xs-4 no-pd">
+            <i class="fa fa-sitemap" aria-hidden="true"></i>
+          </div>
+          <div class="col-md-9 col-xs-8 tasks_data">
+            <p>{{ lastSevenDayTask.length }}</p>
+            <p>Tasks Last 7 Days</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="col-xs-12 col-md-12">
+          <div class="col-md-3 col-xs-4 no-pd">
+            <i class="fa fa-gg-circle" aria-hidden="true"></i>
+          </div>
+          <div class="col-md-9 col-xs-8 tasks_data">
+            <p>0</p>
+            <p>AMH/day Last 7 Days</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-12 dashboard-title no-pd">
+    <div class="col-md-9 no-pd">
+      <i class="fa fa-tasks" aria-hidden="true"> Tasks</i>
+    </div>
+    <div class="col-md-3 text-right dashboard-controls">
+      <i class="fa fa-file-text" aria-hidden="true"></i>
+      <i class="fa fa-pie-chart" aria-hidden="true"></i>
+    </div>
+  </div>
+  <!-- Dashboard -->
+  <div class="panel panel-default">
+    <div class="col-md-12 panel-body no-pd">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>User</th>
+            <th>Task</th>
+            <th>Bucket</th>
+            <th>Timestamp</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let task of allTasks; let idx = index">
+            <td style="width:20%">{{task.values.userName}}</td>
+            <td style="width:45%">{{task.values.taskName}}</td>
+            <td style="width:20%">{{task.values.bucket}}</td>
+            <td style="width:15%">{{task.values.taskCreateTimestamp | date:'yyyy-MM-dd HH:mm:ss':'+0530'}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<a (click)="openTasksModal()">
+  <i class="fa fa-plus-circle addTask" aria-hidden="true"></i>
+</a>
+<!-- Modal -->
+<div class="modal fade" bsModal #addTasksModal="bs-modal" [config]="{backdrop: 'static'}">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" (click)="closeModal()" style="color: white;">&times;</button>
+        <h4 class="modal-title">Add Task</h4>
+      </div>
+      <form [formGroup]="addTaskForm" (ngSubmit)="taskSubmit()">
+        <div class="modal-body">
+          <div class="form-group">
+            <select class="form-control" formControlName="userName">
+              <option selected disabled value="">Select User</option>
+              <option *ngFor="let username of filteredName" value="{{ username }}">{{ username }}</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" rows="5" formControlName="taskName" placeholder="Enter Description"></textarea>
+          </div>
+          <div class="form-group">
+            <input type="number" class="form-control" formControlName="bucket" placeholder="Enter Point">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="form-group">
+            <button type="submit" [disabled]="!addTaskForm.valid" class="btn btn-default add-button" data-dismiss="modal">Add</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

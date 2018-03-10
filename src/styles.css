@@ -1,1 +1,132 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('../node_modules/font-awesome/css/font-awesome.min.css');
+
+.no-pd {
+    padding-right: 0!important;
+    padding-left: 0!important;
+}
+
+.sidebarBG {
+    background-color: #435e9a;
+}
+
+.dashboard {
+    width: 98%;
+    margin: 0 auto;
+}
+
+.DashboardBG {
+    background-color: #e8e8e8
+}
+
+.navbar > p > a > i, .navbar > p > i {
+    color: white;
+    font-size: 30px;
+    padding: 10px 30px 15px 30px;
+}
+
+.navigation {
+    padding-bottom: 0!important;
+}
+
+.navigation > p:nth-of-type(1) {
+    margin-bottom: 0;
+    padding-top: 10px;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.navigation > p:nth-of-type(2) {
+    font-size: 11px;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+.panel-body {
+    background-color: white;
+    padding-top: 0!important;
+}
+
+thead > tr >th {
+    font-size: 14px;
+    font-family: sans-serif;
+    color: #404040;
+}
+
+tbody > tr > td {
+    font-size: 13px;
+    font-family: sans-serif;
+}
+
+.analytics > div > div {
+    background-color: #ffffff;
+    margin: 15px 0;
+    padding: 7px 10px;
+}
+
+.analytics > div > div > div > i {
+    font-size: 28px;
+    border-radius: 50%;
+    border: 0px solid rgb(205, 209, 215);
+    padding: 15px;
+    color: white;
+}
+
+.analytics > div:nth-of-type(1) > div > div > i {
+    background-color: #24ffae;
+}
+.analytics > div:nth-of-type(2) > div > div > i {
+    background-color: #d20b0b;
+}
+.analytics > div:nth-of-type(3) > div > div > i {
+    background-color: #ea9c0d;
+}
+.analytics > div:nth-of-type(4) > div > div > i {
+    background-color: #0d7aea;
+}
+
+.tasks_data > p:nth-of-type(1) {
+    font-size: 17px;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-bottom: 0px;
+    padding-top: 9px;
+}
+
+.tasks_data > p:nth-of-type(2) {
+    font-family: sans-serif;
+    font-size: 13px;
+}
+
+.addTask {
+    position: fixed;
+    bottom: 20px;
+    right: 55px;
+    color: #1c8a2e;
+    font-size: 40px;
+}
+
+.dashboard-title{
+    margin: 20px 0 10px 0;
+    color: #716f6f;
+}
+
+.fa-file-text:hover,
+.fa-pie-chart:hover {
+    color: #435e9a;
+}
+
+.fa-file-text:active,
+.fa-pie-chart:active {
+    color: red;
+}
+
+/* Add task panel style */
+
+.modal-header, .add-button {
+    background-color: #435e9a!important;
+    color: white!important;
+    width: 100%;
+    padding: 8px 15px!important;
+}

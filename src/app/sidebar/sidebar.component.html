@@ -1,0 +1,35 @@
+<!-- <div class="container-fluid no-pd sidebarBG">
+  <div class="col-md-1 no-pd">
+    <p [routerLink]="['/home/dashboard']">Dashboard</p>
+    <p [routerLink]="['/home/tasks']">Dashboard 2</p>
+  </div>
+  <div class="col-md-11 no-pd DashboardBG">
+    <router-outlet></router-outlet>
+  </div>
+</div> -->
+
+<!-- <div (click)="showMenu = !showMenu" class="menu-toggler sidebar-toggler">
+  <span>ddddd</span>
+</div> -->
+<div *ngIf="showMenu">
+  <div class="container-fluid no-pd sidebarBG">
+    <div class="col-md-1 no-pd navbar">
+      <p>
+        <i class="fa fa-exchange" (click)="showMenu = !showMenu" aria-hidden="true"></i>
+      </p>
+      <p>
+        <a [routerLink]="['/home/dashboard']">
+          <i class="fa fa-tachometer fa-2x" aria-hidden="true"></i>
+        </a>
+      </p>
+      <p>
+        <a [routerLink]="['/home/reports']">
+          <i class="fa fa-table fa-2x" aria-hidden="true"></i>
+        </a>
+      </p>
+    </div>
+    <div class="col-md-11 no-pd DashboardBG">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,42 @@
+<div class="panel panel-default">
+  <div class="col-md-12 panel-body navigation">
+    <p>Reports</p>
+    <p>Home / Reports</p>
+  </div>
+</div>
+<div class="dashboard no-pd">
+  <div class="col-md-12 dashboard-title no-pd">
+    <div class="col-md-9 no-pd">
+      <i class="fa fa-tasks" aria-hidden="true"> Tasks</i>
+    </div>
+    <div class="col-md-3 text-right dashboard-controls">
+      <i class="fa fa-file-text" aria-hidden="true"></i>
+      <i class="fa fa-pie-chart" aria-hidden="true"></i>
+    </div>
+  </div>
+  <!-- Dashboard -->
+  <div class="panel panel-default">
+    <div class="col-md-12 panel-body no-pd">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>User</th>
+            <th>Task</th>
+            <th>Bucket</th>
+            <th>Timestamp</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let task of allTasks; let idx = index">
+            <td style="width:20%">{{task.values.userName}}</td>
+            <td style="width:45%">{{task.values.taskName}}</td>
+            <td style="width:20%">{{task.values.bucket}}</td>
+            <td style="width:15%">{{task.values.taskCreateTimestamp | date:'yyyy-MM-dd HH:mm:ss':'+0530'}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- </div> -->
+
+</div>

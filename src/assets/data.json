@@ -1,0 +1,146 @@
+[
+  {
+    "values": {
+      "bucket": 0.5,
+      "taskName": "Done some work",
+      "userName": "Sam",
+      "taskCreateTimestamp": 1495534511750
+    }
+  },
+  {
+    "values": {
+      "bucket": 0.5,
+      "taskName": "Debugged some issues",
+      "userName": "Alley",
+      "taskCreateTimestamp": 1495534910750
+    }
+  },
+  {
+    "values": {
+      "bucket": 2,
+      "taskName": "Explored ReactJS",
+      "userName": "Hood",
+      "taskCreateTimestamp": 1495605870146
+    }
+  },
+  {
+    "values": {
+      "bucket": 0.5,
+      "taskName": "Done some work",
+      "userName": "Sam",
+      "taskCreateTimestamp": 1495534941750
+    }
+  },
+  {
+    "values": {
+      "bucket": 0.5,
+      "taskName": "Explored Angular2",
+      "userName": "Alley",
+      "taskCreateTimestamp": 1495534901750
+    }
+  },
+  {
+    "values": {
+      "bucket": 2,
+      "taskName": "Explored Knockout JS",
+      "userName": "Hood",
+      "taskCreateTimestamp": 1495605560046
+    }
+  },
+  {
+    "values": {
+      "bucket": 0.5,
+      "taskName": "Knowledge sharing",
+      "userName": "Sam",
+      "taskCreateTimestamp": 1495533911755
+    }
+  },
+  {
+    "values": {
+      "bucket": 0.5,
+      "taskName": "Explored React Native",
+      "userName": "Alley",
+      "taskCreateTimestamp": 1495534921750
+    }
+  },
+  {
+    "values": {
+      "bucket": 2,
+      "taskName": "Explored AngularJS",
+      "userName": "Hood",
+      "taskCreateTimestamp": 1495534911150
+    }
+  },
+  {
+    "values": {
+      "bucket": 0.5,
+      "taskName": "Done some work",
+      "userName": "Sam",
+      "taskCreateTimestamp": 1495534511750
+    }
+  },
+  {
+    "values": {
+      "bucket": 0.5,
+      "taskName": "Debugged some issues",
+      "userName": "Alley",
+      "taskCreateTimestamp": 1495534910750
+    }
+  },
+  {
+    "values": {
+      "bucket": 2,
+      "taskName": "Explored ReactJS",
+      "userName": "Hood",
+      "taskCreateTimestamp": 1495605870146
+    }
+  },
+  {
+    "values": {
+      "bucket": 0.5,
+      "taskName": "Done some work",
+      "userName": "Sam",
+      "taskCreateTimestamp": 1495534941750
+    }
+  },
+  {
+    "values": {
+      "bucket": 0.5,
+      "taskName": "Explored Angular2",
+      "userName": "Alley",
+      "taskCreateTimestamp": 1495534901750
+    }
+  },
+  {
+    "values": {
+      "bucket": 2,
+      "taskName": "Explored Knockout JS",
+      "userName": "Hood",
+      "taskCreateTimestamp": 1495605560046
+    }
+  },
+  {
+    "values": {
+      "bucket": 0.5,
+      "taskName": "Knowledge sharing",
+      "userName": "Sam",
+      "taskCreateTimestamp": 1495533911755
+    }
+  },
+  {
+    "values": {
+      "bucket": 0.5,
+      "taskName": "Explored React Native",
+      "userName": "Alley",
+      "taskCreateTimestamp": 1495534921750
+    }
+  },
+  {
+    "values": {
+      "bucket": 2,
+      "taskName": "Explored AngularJS",
+      "userName": "Hood",
+      "taskCreateTimestamp": 1495534911150
+    }
+  }
+]
